@@ -13,9 +13,15 @@ header {
 
 .logo {
     position: absolute;
-    left: 20px;
-    padding-top: 5.8rem; 
-    max-width: 250px;
+    left: 50px;
+    bottom: 10px;
+    padding-top: 5rem;
+    
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
 }
 
 
@@ -32,6 +38,18 @@ header {
     font-weight: bold;
 }
 
+.git-icon {
+    position: absolute;
+    right: 50px;
+    color: antiquewhite; 
+    transition: transform 0.3s ease, color 0.3s ease; 
+    font-size: 30px;
+}
+  
+.git-icon:hover {
+    transform: scale(1.2); 
+}
+
 .hamburger-menu {
     display: none;
     font-size: 24px;
@@ -45,6 +63,48 @@ header {
 
 /* INÍCIO STYLE */
 
+.inicio-section{
+    font-family: "Quicksand", serif;
+    background-color: #000;
+    height: 100vh;
+}
+
+.inicio-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inicio-info{
+    margin-left: 100px;
+    color: #fff;
+}
+
+.inicio-img{
+    margin-right: 100px;
+}
+
+.inicio-section h2{
+    font-family: "Quicksand", serif;
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+
+.inicio-section p{
+    font-family: "Quicksand", serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.inicio-section a{
+    font-family: "Quicksand", serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: rgb(191, 40, 40);
+}
 
 /* SOBRE STYLE */
 
@@ -80,8 +140,11 @@ header {
 
 /* RESPONSIVIDADE STYLE */
 
-/* RESPONSIVIDADE HEADER */
+
 @media (max-width: 768px) {
+    
+    /* RESPONSIVIDADE HEADER */
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -100,4 +163,14 @@ header {
     .hamburger-menu {
         display: block;
     }
+
+    .logo img {
+        max-width: 100px;
+    }
+
+    .logo {
+        top: 1px; 
+    }
+
+    /*  FIM RESPONSIVIDADE HEADER */
 }
