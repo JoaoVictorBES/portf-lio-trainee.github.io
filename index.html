@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <script src="https://kit.fontawesome.com/2e789d7b88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -21,7 +24,7 @@
      <header>
 
         <div class="logo">
-            <img src="/assets/img/DEV__1_-removebg-preview.png" alt="">
+            <img src="/assets/img/img-normal/DEV__1_-removebg-preview.png" alt="">
         </div>
 
         <ul class="nav-links">
@@ -40,56 +43,59 @@
      </header>
 
     <!-- Seção Inicio -->
-     <section class="inicio-section" id="inicio">
+        <section class="inicio-section" id="inicio" >
         
-        <div class="inicio-container">
-           
-            <div class="inicio-info">
-                <h2> Back-End Software Developer</h2>
-                <p> Solucionador de problemas, transformando lógica em código funcional. <br>Versátil, dinâmico e focado no resultado final. </p>
-                <a href="#sobre" class="chevron">Sobre mim &#x203A;</a>
+            <div class="inicio-container" >
+               
+                <div class="inicio-info" >
+                    <h2 > Back-End Software Developer</h2>
+                    <p > Solucionador de problemas, transformando lógica em código funcional. <br>Versátil, dinâmico e focado no resultado final. </p>
+                    <a href="#sobre" class="chevron" >Sobre mim &#x203A;</a>
+                </div>
+    
+                <div class="inicio-img" >
+                    <img src="/assets/img/img-cartoon/boneco-cartoon-3d-removebg-preview.png" alt="profile img" class="profile-img" >
+                </div>
+    
             </div>
-
-            <div class="inicio-img">
-                <img src="/assets/img/Dé-esse.png" alt="profile img" class="profile-img">
+            
+            <div class="home-socials">
+                <aside class="left-bar-home">
+                    <div class="home-social">
+                        <a href="https://github.com/JoaovictorBES" class="home-social-icon-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+    
+                    <div class="home-social">
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-barbosa-791112276/" class="home-social-icon-link">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+    
+                    <div class="home-social">
+                        <a href="" class="home-social-icon-link">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </aside>
             </div>
+    
+         </section>
+     
 
-        </div>
-        
-        <div class="home-socials">
-            <aside class="left-bar-home">
-                <div class="home-social">
-                    <a href="https://github.com/JoaovictorBES" class="home-social-icon-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-
-                <div class="home-social">
-                    <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-barbosa-791112276/" class="home-social-icon-link">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-
-                <div class="home-social">
-                    <a href="" class="home-social-icon-link">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </div>
-            </aside>
-        </div>
-
-     </section>
+     
 
     <!-- Seção Sobre --> 
-     <section class="about" id="sobre">
+     <section class="about" id="sobre" >
 
         <div class="intro">
-            <img src="/assets/img/Design_sem_nome2-removebg-preview.png" alt="" class="intro-img">
+            <img src="/assets/img/img-normal/Design_sem_nome2-removebg-preview.png" alt="" class="intro-img">
             <div class="intro-info">
                 <h2>Olá Sou João, Desenvolvedor Web</h2>                                          
                 <p>Back-End Developer | Java Fan | VSCode</p>
             </div>
-            <a href="path/to/your-file.pdf" class="download-link" download>Download CV</a>
+            <a href="file:///C:/Users/55139/Downloads/PDF%20Pessoal/CV%20-%20Jo%C3%A3o%20%20Victor%20(2).pdf" class="download-link" download>Download CV</a>
         <div>
             
   
@@ -152,7 +158,7 @@
      <section class="skills-tech" id="projetos">
         
             <div class="skills-info">
-                <p class="tagline">UM PROBLEMA É A CHANCE PARA VOCÊ FAZER SEU MELHOR.</p>
+                <p class="tagline">ONDE HÁ UM OBSTÁCULO, HÁ TAMBÉM UMA OPORTUNIDADE DE CRESCER.</p>
                 <h1>Skills & Tecnologias</h1>
                 <p class="description">
                     Atuo no desenvolvimento de back-end, criando aplicações web com Java, JavaScript, HTML, CSS e MySQL.<br>
@@ -200,8 +206,8 @@
                      <p>Figma</p>
                 </div>
                 <div class="icon">
-                   	 <i class="fa-brands fa-docker"></i>
-                     <p>Docker</p>
+                    <i class="fa-brands fa-wordpress-simple"></i>
+                     <p>Wordpress</p>
                 </div>
                 
             </div>
@@ -210,8 +216,65 @@
      
 
      <!-- Seção Projetos -->
-     <section class="projetos">
+     <section class="projects">
+        
+        <div class="projects-container">
+            
+            <div class="project-info">
+                <h1>Portfólio & Projetos Prévios</h1>
+                <p>Durante meu processo de aprendizado, trabalhei em diversos tipos de projetos aqui estão alguns exemplos.</p>
+            </div>
+            
+        
+            <div class="box-cards">
+                
+                <div class="project-flip-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3> Memoteca </h3>
+                        </div>
+                        <div class="card-back">
+                        <p>Mais detalhes sobre o projeto...</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="project-flip-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>SGEE</h3>
+                        </div>
+                        <div class="card-back">
+                        <p>Mais detalhes sobre o projeto...</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="project-flip-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Pic Web</h3>
+                        </div>
+                        <div class="card-back">
+                        <p>Mais detalhes sobre o projeto...</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="project-flip-card">
+                    <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Projeto 4</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Mais detalhes sobre o projeto...</p>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
      </section>
 
 
