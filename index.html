@@ -95,7 +95,7 @@
                 <h2>Olá Sou João, Desenvolvedor Web</h2>                                          
                 <p>Back-End Developer | Java Fan | VSCode</p>
             </div>
-            <a href="file:///C:/Users/55139/Downloads/PDF%20Pessoal/CV%20-%20Jo%C3%A3o%20%20Victor%20(2).pdf" class="download-link" download>Download CV</a>
+            <button type="submit" href="file:///C:/Users/55139/Downloads/PDF%20Pessoal/CV%20-%20Jo%C3%A3o%20%20Victor%20(2).pdf" class="download-link" download>Download CV</button>
         <div>
             
   
@@ -279,14 +279,43 @@
 
 
     <!-- Seção Contato -->
-     <section class="contato-section" id="contato">
+     <section class="contact-section" id="contato">
+        
+        <div class="contact-form">
+
+            <div class="card-form">
+
+                <form action="">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Seu nome">
+    
+                    <label for="email"></label>
+                    <input type="text" placeholder="Seu e-mail">
+    
+                    <label for="message"></label>
+                    <input type="text" placeholder="Sua mensagem aqui">
+
+                    <button type="submit" class="btn-form"> Enviar </button>
+                </form>
+
+            </div>
+
+        </div>
         
      </section> 
 
 
     <!-- Footer --> 
      <footer>
-        
+        <div class="footer-container">
+            <p>&copy; 2025 João Victor - Todos os direitos reservados.</p>
+            <ul class="footer-socials">
+                <li><a href="https://github.com/JoaovictorBES" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-barbosa-791112276/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="mailto:seuemail@exemplo.com"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <a href="#inicio" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
      </footer> 
 
     <script src="/assets/js/main.js"></script>

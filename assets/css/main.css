@@ -442,7 +442,131 @@ a {
 }
   
 
-/* CONTATO STYLE */
+/* CONTACT STYLE */
+
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
+}
+
+.card-form{
+    background-color: #fff;
+    padding: 2rem;
+    width: 400px;
+    border-radius: 12px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    border: 3px solid red; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-form:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+  
+form input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+  
+form input:focus {
+    border-color: red; 
+}
+
+
+/* FOOTER */
+
+footer {
+    font-family: "Quicksand", serif;
+    background-color: #000; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    position: relative; /* Permite posicionar elementos dentro do footer */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-socials {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-socials li {
+    display: inline-block;
+}
+
+.footer-socials a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: red;
+}
+
+.back-to-top {
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 50px; 
+    height: 50px; 
+    background-color: #ad0912; 
+    color: #fff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 50%; 
+    text-decoration: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    font-size: 20px; 
+    transition: background-color 0.3s, transform 0.2s; 
+    z-index: 1000; 
+}
+
+.back-to-top:hover {
+    background-color: red; 
+    transform: scale(1.1); 
+}
 
 
 /* GOOGLE FONTS */

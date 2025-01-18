@@ -5,6 +5,27 @@ body{
     height: 100vh;
 }
 
+section {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+hmtl{
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    section {
+        height: auto; /* Permite ajuste automático para conteúdo maior */
+        padding: 40px 20px; /* Mais espaçamento em telas menores */
+    }
+}
 
 
 
