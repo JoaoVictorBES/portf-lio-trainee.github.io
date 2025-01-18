@@ -113,10 +113,7 @@ header {
     color: rgb(191, 40, 40);
 }
 
-.download-link{
-    color: rgb(191, 40, 40);
-    list-style: none;
-}
+
 
 .home-socials {
     position: absolute;
@@ -161,35 +158,34 @@ header {
 .about{
     font-family: "Quicksand", serif;
     display: flex;
-    margin: 0;
+    flex-wrap: wrap;
     justify-content: center;
     min-height: 100vh;
     max-width: 100%;
-    box-sizing: border-box;
     background-image: url('/assets/img/img-normal/159480785_00c3a587-63c5-4e11-bf1f-c256fd88c687.jpg');
     text-align: center;
     color: antiquewhite;
     overflow: hidden;
     padding: 50px 20px;
-    flex-wrap: wrap;
 }
 
 
 .intro{
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .intro-img {
     object-fit: cover;
-    margin-top: 40px;
+    width: 190px;
+    border-radius: 50%;
+    
+    transition: transform 0.3s;
 }
 .intro-img:hover {
     animation: wobble 0.5s ease-in-out;
-    transform-origin: center;
-}
-
-.intro-info{
-    margin-top: -68px;
 }
 
 .intro h2 {
@@ -203,11 +199,11 @@ header {
 
 .info-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
     margin-top: 100px;
-    padding: 10px 10px;
+    width: 100%;
 }
 
 .card-1{
@@ -262,6 +258,23 @@ header {
 
 .icon-txt i{
     font-size: 20px;
+}
+
+.download-link{
+    color: rgb(131, 130, 130);
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: 1px solid rgb(12, 5, 5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.download-link:hover {
+    background: rgb(191, 40, 40);
+    color: #ccc;
 }
 
 
@@ -722,11 +735,11 @@ footer {
         flex-direction: column;
         gap: 15px;
         width: 100%;
+        align-items: center;
     }
       
     .card {
-        max-width: 100%;
-        margin: 0 auto;
+        width: 100%;
     }
     
 }
