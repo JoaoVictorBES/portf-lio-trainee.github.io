@@ -6,8 +6,6 @@ body{
 }
 
 section {
-    width: 100%;
-    height: 100vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,14 +14,14 @@ section {
     box-sizing: border-box; 
 }
 
-hmtl{
+html{
     scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
     section {
-        height: auto; /* Permite ajuste automático para conteúdo maior */
-        padding: 40px 20px; /* Mais espaçamento em telas menores */
+        height: auto; 
+        padding: 40px 20px; 
     }
 }
 
