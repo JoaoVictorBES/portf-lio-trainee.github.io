@@ -29,13 +29,13 @@ header {
     display: flex;
     gap: 50px;
     list-style: none;
-    font-size: 25px;
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 25px;
 }
 
 .git-icon {
@@ -103,6 +103,7 @@ header {
     letter-spacing: 2px;
 }
 
+
 .inicio-section p, a{
     font-size: 16px;
 }
@@ -114,9 +115,8 @@ header {
 }
 
 
-
 .home-socials {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 0;
     transform: translateY(-30%);
@@ -181,11 +181,15 @@ header {
     object-fit: cover;
     width: 190px;
     border-radius: 50%;
-    
     transition: transform 0.3s;
 }
+
 .intro-img:hover {
     animation: wobble 0.5s ease-in-out;
+}
+
+.intro-info{
+    margin-top: -50px;
 }
 
 .intro h2 {
@@ -404,8 +408,8 @@ a {
 
 .project-flip-card {
     perspective: 1000px;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -437,7 +441,7 @@ a {
 }
   
 .card-front {
-    background: #007BFF;
+    background: #080808;
     color: white;
 }
   
@@ -445,9 +449,17 @@ a {
     background: #f4f4f4;
     color: black;
     transform: rotateY(180deg);
-    font-size: 1.2rem;
-    padding: 1rem;
-    text-align: center;
+}
+
+.card-front img {
+    max-width: 90%; 
+    max-height: 90%; 
+    object-fit: contain; 
+    border-radius: 5px; 
+}
+
+.card-info {
+   font-size: 1rem;
 }
   
 
@@ -510,6 +522,10 @@ form input {
 form input:focus {
     border-color: red; 
     background-color: #fff;
+}
+
+form input.msg-input{
+    height: 4rem; 
 }
 
 .btn-form {
@@ -628,7 +644,7 @@ footer {
 /* MEDIA QUERIES */
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     
     html, body{
         overflow-x: hidden;
@@ -699,13 +715,14 @@ footer {
     }
 
     .inicio-info {
-        width: 100%;
-        text-align: center;
-        margin-top: 90px;
+        align-items: center;
+        justify-content: center;
     }
 
     .inicio-img {
         width: 100%;
+        align-items: center;
+        display: none;
     }
 
     .inicio-container h2{
