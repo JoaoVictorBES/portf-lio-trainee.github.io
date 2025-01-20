@@ -41,9 +41,17 @@ header {
 .git-icon {
     position: absolute;
     right: 50px;
-    color: antiquewhite; 
-    transition: transform 0.3s ease, color 0.3s ease; 
-    font-size: 30px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+.nav-img:hover {
+    animation: wobble 0.5s ease-in-out;
+}
+
+.nav-img{
+    width: 100px;
+    height: auto;
 }
   
 .git-icon:hover {
@@ -111,7 +119,7 @@ header {
 .inicio-section a{
     text-decoration: none;
     transition: transform 0.3s ease;
-    color: rgb(191, 40, 40);
+    color: #59E889;
 }
 
 
@@ -146,7 +154,7 @@ header {
 
 .home-social i {
     font-size: 40px;
-    color:  rgb(191, 40, 40);
+    color: #59E889;
 }
 
 .home-social-icon-link:hover {
@@ -164,7 +172,7 @@ header {
     max-width: 100%;
     background-image: url('/assets/img/img-normal/159480785_00c3a587-63c5-4e11-bf1f-c256fd88c687.jpg');
     text-align: center;
-    color: antiquewhite;
+    color: #fff;
     overflow: hidden;
     padding: 50px 20px;
 }
@@ -277,7 +285,7 @@ header {
 }
 
 .download-link:hover {
-    background: rgb(191, 40, 40);
+    background: #59E889;
     color: #ccc;
 }
 
@@ -307,7 +315,7 @@ header {
 .tagline {
     font-size: 0.9rem;
     letter-spacing: 1px;
-    color: #aaa;
+    color: #fff;
     margin-bottom: 10px;
 }
   
@@ -323,7 +331,7 @@ h1 {
 }
 
 a {
-    color: crimson;
+    color: #59E889;
     text-decoration: none;
 }
   
@@ -446,7 +454,7 @@ a {
 }
   
 .card-back {
-    background: #f4f4f4;
+    background: #fff;
     color: black;
     transform: rotateY(180deg);
 }
@@ -486,7 +494,7 @@ a {
     width: 400px;
     border-radius: 12px; 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
-    border: 2px solid  red; 
+    border: 2px solid  #59E889; 
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -494,6 +502,10 @@ a {
     transform: translateY(-5px); 
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
     
+}
+
+.contact-call{
+    margin-bottom: 50px;
 }
 
 form {
@@ -520,7 +532,7 @@ form input {
 }
   
 form input:focus {
-    border-color: red; 
+    border-color: #59E889; 
     background-color: #fff;
 }
 
@@ -530,7 +542,7 @@ form input.msg-input{
 
 .btn-form {
     padding: 0.8rem;
-    background-color: #ff0000;
+    background-color: #59E889;
     color: #fff;
     font-size: 1rem;
     border: none;
@@ -540,12 +552,12 @@ form input.msg-input{
 }
 
 .btn-form:hover {
-    background-color: #d40000; 
+    background-color: #59E889; 
     transform: scale(1.05);
 }
 
 .contact-section h1{
-    color: #f9f9f9;
+    color: #fff;
     font-family: "Quicksand", serif;
 }
 
@@ -590,7 +602,7 @@ footer {
 }
 
 .footer-socials a:hover {
-    color: red;
+    color: #59E889;
 }
 
 .back-to-top {
@@ -599,7 +611,7 @@ footer {
     right: 20px; 
     width: 50px; 
     height: 50px; 
-    background-color: #ad0912; 
+    background-color:#59E889; 
     color: #fff; 
     display: flex; 
     justify-content: center; 
@@ -613,7 +625,7 @@ footer {
 }
 
 .back-to-top:hover {
-    background-color: red; 
+    background-color:#59E889; 
     transform: scale(1.1); 
 }
 

@@ -9,13 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Walter+Turncoat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Walter+Turncoat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Lacquer&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Walter+Turncoat&display=swap" rel="stylesheet">
-    <!-- Google Fonts  -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/reset.css">
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/2e789d7b88.js" crossorigin="anonymous"></script>
+    <!-- Animação scroll -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 <body>
@@ -35,7 +37,7 @@
         </ul>
 
         <a href="https://github.com/JoaoVictorBES" class="git-icon">
-            <i class="fa-brands fa-github"></i>
+            <img src="/assets/img/img-normal/Design_sem_nome-removebg-verde-preview.png" alt="" class="nav-img">
         </a>
 
         <button class="hamburger-menu">☰</button>
@@ -48,14 +50,14 @@
         
             <div class="inicio-container" >
                
-                <div class="inicio-info" >
-                    <h2 > Back-End Software Developer</h2>
+                <div class="inicio-info" data-aos="zoom-in-up">
+                    <h2 > <span>Back-End Software Developer</span></h2>
                     <p > Solucionador de problemas, transformando lógica em código funcional. <br>Versátil, dinâmico e focado no resultado final. </p>
                     <a href="#sobre" class="chevron" >Sobre mim &#x203A;</a>
                 </div>
     
-                <div class="inicio-img" >
-                    <img src="/assets/img/img-cartoon/boneco-cartoon-3d-removebg-preview.png" alt="profile img" class="profile-img" >
+                <div class="inicio-img" data-aos="zoom-in-left">
+                    <img src="/assets/img/img-cartoon/essa-vai-da-bom.png" alt="profile img" class="profile-img" >
                 </div>
     
             </div>
@@ -85,13 +87,11 @@
          </section>
      
 
-     
-
     <!-- Seção Sobre --> 
      <section class="about" id="sobre" >
 
         <div class="intro">
-            <img src="/assets/img/img-normal/Design_sem_nome2-removebg-preview.png" alt="" class="intro-img">
+            <img src="/assets/img/img-normal/Design_sem_nome-removebg-verde-preview.png" alt="" class="intro-img">
             <div class="intro-info">
                 <h2>Olá Sou João, Desenvolvedor Web</h2>                                          
                 <p>Back-End Developer | Java Fan | VSCode</p>
@@ -102,7 +102,7 @@
   
         <div class="info-container">
             
-            <div class="card-1">
+            <div class="card-1" data-aos="flip-left">
                 <h2 class="card-1-title">Sobre mim</h2><br>
                 <p class="card-description">
                     No ano de 2023 decidi mergulhar de cabeça no mundo da programação. Desde então, venho estudando bastante, 
@@ -111,7 +111,7 @@
                     Além de amar resolver problemas com código, também sou apaixonado por futebol, fotografia e atividades ao ar livre.
             </div>        
             
-            <div class="card-2">
+            <div class="card-2"data-aos="flip-right">
                 <h2 class="card-2-title">Formação</h2><br>
 
                 <div class="icon-txt">
@@ -155,145 +155,145 @@
 
      </section> 
 
-    <!-- Seção Skills e Tecnologia  -->
-     <section class="skills-tech" id="projetos">
-        
-            <div class="skills-info">
-                <p class="tagline">ONDE HÁ UM OBSTÁCULO, HÁ TAMBÉM UMA OPORTUNIDADE DE CRESCER.</p>
-                <h1>Skills & Tecnologias</h1>
-                <p class="description">
-                    Atuo no desenvolvimento de back-end, criando aplicações web com Java, JavaScript, HTML, CSS e MySQL.<br>
-                    Tenho conhecimento em frameworks como Spring Boot, Angular e Node.js, além de utilizar ferramentas como Postman para integração e testes.
-                </p>
-           
-                <p>Visite meu <a href="#">LinkedIn</a> para mais detalhes.</p>
-            </div>
+        <!-- Seção Skills e Tecnologia  -->
+        <section class="skills-tech" id="projetos">
             
-            <div class="icons-container">
-                <div class="icon">
-                    <i class="fa-brands fa-angular"></i>
-                    <p>Angular</p>
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-java"></i>
-                    <p>Java</p>
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-js"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div class="icon">
-					<i class="fa-brands fa-html5"></i>
-                    <p>HTML</p>
-				</div>
-                <div class="icon">
-					<i class="fa-brands fa-css3"></i>
-                    <p>CSS</p>
-				</div>
-                <div class="icon">
-                    <i class="fa-brands fa-node"></i>
-                    <p>Node.js</p>
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <p>Git</p>
-                </div>
-                <div class="icon">
-                    <i class="fa-solid fa-database"></i>
-                    <p>MySQL</p>
-                </div>
-                <div class="icon">
-                     <i class="fa-brands fa-figma"></i>
-                     <p>Figma</p>
-                </div>
-                <div class="icon">
-                    <i class="fa-brands fa-wordpress-simple"></i>
-                     <p>Wordpress</p>
+                <div class="skills-info">
+                    <p class="tagline">ONDE HÁ UM OBSTÁCULO, HÁ TAMBÉM UMA OPORTUNIDADE DE CRESCER.</p>
+                    <h1>Skills & Tecnologias</h1>
+                    <p class="description">
+                        Atuo no desenvolvimento de back-end, criando aplicações web com Java, JavaScript, HTML, CSS e MySQL.<br>
+                        Tenho conhecimento em frameworks como Spring Boot, Angular e Node.js, além de utilizar ferramentas como Postman para integração e testes.
+                    </p>
+            
+                    <p>Visite meu <a href="#">LinkedIn</a> para mais detalhes.</p>
                 </div>
                 
-            </div>
-        
-     </section> 
+                <div class="icons-container">
+                    <div class="icon" data-aos="zoom-in">
+                        <i class="fa-brands fa-angular" ></i>
+                        <p>Angular</p>
+                    </div>
+                    <div class="icon" data-aos="zoom-in">
+                        <i class="fa-brands fa-java"></i>
+                        <p>Java</p>
+                    </div>
+                    <div class="icon" data-aos="zoom-in">
+                        <i class="fa-brands fa-js" ></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="icon" data-aos="zoom-in">
+                        <i class="fa-brands fa-html5" ></i>
+                        <p>HTML</p>
+                    </div>
+                   <div class="icon" data-aos="zoom-in">
+                        <i class="fa-brands fa-css3" ></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="icon" data-aos="zoom-in">
+                        <i class="fa-brands fa-node" ></i>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="icon" data-aos="zoom-in">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="icon" data-aos="zoom-in">
+                        <i class="fa-solid fa-database"></i>
+                        <p>MySQL</p>
+                    </div>
+                    <div class="icon" data-aos="zoom-in">
+                        <i class="fa-brands fa-figma" ></i>
+                        <p>Figma</p>
+                    </div>
+                    <div class="icon" data-aos="zoom-in">
+                        <i class="fa-brands fa-wordpress-simple"></i>
+                        <p>Wordpress</p>
+                    </div>
+                    
+                </div>
+            
+        </section> 
      
 
-     <!-- Seção Projetos -->
-     <section class="projects">
-        
-        <div class="projects-container">
+        <!-- Seção Projetos -->
+        <section class="projects">
             
-            <div class="project-info">
-                <h1>Portfólio & Projetos Prévios</h1>
-                <p>Durante meu processo de aprendizado, trabalhei em diversos tipos de projetos aqui estão alguns exemplos.</p>
-            </div>
-            
-        
-            <div class="box-cards">
+            <div class="projects-container">
                 
-                <div class="project-flip-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="/assets/img/img-normal/memoteca.png" alt="">
-                        </div>
-                        <div class="card-back">
-                        <p class="card-info">Desenvolvida com Angular e JavaScript, a Memoteca é uma ferramenta leve e funcional para criar e personalizar notas em formato de cards. Seu banco de dados em memória permite armazenamento rápido, ideal para testar ideias e manter informações organizadas.</p>
+                <div class="project-info">
+                    <h1>Portfólio & Projetos Prévios</h1>
+                    <p>Durante meu processo de aprendizado, trabalhei em diversos tipos de projetos aqui estão alguns exemplos.</p>
+                </div>
+                
+            
+                <div class="box-cards">
+                    
+                    <div class="project-flip-card" data-aos="flip-right">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="/assets/img/img-normal/memoteca.png" alt="">
+                            </div>
+                            <div class="card-back">
+                            <p class="card-info">Desenvolvida com Angular e JavaScript, a Memoteca é uma ferramenta leve e funcional para criar e personalizar notas em formato de cards. Seu banco de dados em memória permite armazenamento rápido, ideal para testar ideias e manter informações organizadas.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-        
-                <div class="project-flip-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="/assets/img/img-normal/sge.png" alt="">
-                        </div>
-                        <div class="card-back">
-                        <p class="card-info">O sistema de gestão de equipes, ainda em desenvolvimento, permite criar e editar atletas, listar jogos futuros e cadastrar usuários. Desenvolvido com Java Spring no backend, Angular no frontend e MySQL para armazenamento, foi testado com Postman. Futuramente, contará com suporte para pagamentos integrados.</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="project-flip-card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="/assets/img/img-normal/picweb.png" alt="">
-                        </div>
-                        <div class="card-back">
-                        <p class="card-info">Mais detalhes sobre o projeto...</p>
+            
+                    <div class="project-flip-card" data-aos="flip-right">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="/assets/img/img-normal/sge.png" alt="">
+                            </div>
+                            <div class="card-back">
+                            <p class="card-info">O sistema de gestão de equipes, ainda em desenvolvimento, permite criar e editar atletas, listar jogos futuros e cadastrar usuários. Desenvolvido com Java Spring no backend, Angular no frontend e MySQL para armazenamento, foi testado com Postman. Futuramente, contará com suporte para pagamentos integrados.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+            
+                    <div class="project-flip-card" data-aos="flip-right">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="/assets/img/img-normal/picweb.png" alt="">
+                            </div>
+                            <div class="card-back">
+                            <p class="card-info">Mais detalhes sobre o projeto...</p>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
             </div>
-        </div>
-        
-     </section>
+            
+        </section>
 
 
     <!-- Seção Contato -->
-     <section class="contact-section" id="contato">
-        <h1>ENTRE EM CONTATO</h1>
-        <div class="contact-form">
+        <section class="contact-section" id="contato" >
+            <h1 class="contact-call">ENTRE EM CONTATO</h1>
+            <div class="contact-form" data-aos="zoom-out">
 
-            <div class="card-form">
+                <div class="card-form">
 
-                <form action="https://formsubmit.co/victorsrodrigues99@gmail.com" method="POST">
-                    <label for="name"></label>
-                    <input type="text" name="name" placeholder="Seu nome" required>
-    
-                    <label for="email"></label>
-                    <input type="text" name="email" placeholder="Seu e-mail" required>
-    
-                    <label for="message"></label>
-                    <input type="text" class="msg-input" name="message" placeholder="Sua mensagem aqui" maxlength="250" required>
+                    <form action="https://formsubmit.co/victorsrodrigues99@gmail.com" method="POST">
+                        <label for="name"></label>
+                        <input type="text" name="name" placeholder="Seu nome" required>
+        
+                        <label for="email"></label>
+                        <input type="text" name="email" placeholder="Seu e-mail" required>
+        
+                        <label for="message"></label>
+                        <input type="text" class="msg-input" name="message" placeholder="Sua mensagem aqui" maxlength="250" required>
 
-                    <button type="submit" class="btn-form"> Enviar </button>
-                </form>
+                        <button type="submit" class="btn-form"> Enviar </button>
+                    </form>
+
+                </div>
 
             </div>
-
-        </div>
-        
-     </section> 
-     </main>
+            
+        </section> 
+    </main>
     
     <!-- Footer --> 
      <footer>
@@ -305,9 +305,13 @@
                 <li><a href="mailto:seuemail@exemplo.com"><i class="fa-solid fa-envelope"></i></a></li>
             </ul>
         </div>
-        <a href="#inicio" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#inicio" class="back-to-top" ><i class="fa-solid fa-arrow-up"></i></a>
      </footer> 
 
     <script src="/assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

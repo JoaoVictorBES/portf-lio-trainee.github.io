@@ -9,6 +9,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
-
+/* Animação da section */
