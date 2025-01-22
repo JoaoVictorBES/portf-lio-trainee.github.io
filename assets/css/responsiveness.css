@@ -1,6 +1,5 @@
 /* MEDIA QUERIES */
 
-
 @media screen and (max-width: 768px) {
     
     html, body{
@@ -47,18 +46,18 @@
         margin-top: -50px;
         margin-left: -20px;
         z-index: 1000;
-    }
 
-    .logo img {
-        max-width: 100px;
     }
 
     .logo {
-        top: 1px; 
+        display: none;
     }
 
-    .git-icon {
-        display: none;
+    .nav-img {
+        display: flex;
+        left: 0;
+        margin-bottom: -70px;
+        margin-left: 15px;
     }
 
     /* RESPONSIVIDADE  INICIO */
@@ -77,9 +76,11 @@
     }
 
     .inicio-info {
-        flex-direction: column;
+        flex-direction: flex;
         margin-top: 20px; 
         text-align: center;
+        justify-content: center;
+        margin-left: -2px;
     }
 
     .inicio-img {
@@ -90,12 +91,14 @@
     .media-response{
         margin-bottom: 20px;
         display: flex;
-        margin-right: 200px;
+        margin-right: 300px;
     }
 
     .media-response img{
         width: 150px;
         height: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .inicio-container h2{
@@ -129,11 +132,76 @@
     }
       
     .card {
-        width: 100%;
+        width: 50%;
+    }
+
+
+    /* RESPONSIVIDADE PROJECTS */
+
+    .projects{
+        display: flex;
+    }
+
+    .project-container{
+        
+    }
+
+    .box-cards{
+        flex-direction: row;
     }
     
 }
 
 
-/* Projects Style */
+@media screen and (max-width: 420px){
 
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /* RESPONSIVIDADE  INICIO */
+
+    .inicio-section{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .inicio-container {
+        width: 100%;
+    }
+
+    .inicio-info {
+       margin-right: -100px;
+    }
+
+    .inicio-img {
+        width: 100%;
+        display: none;
+    }
+
+    .media-response{
+        margin-bottom: 20px;
+        display: flex;
+        margin-right: 500px;
+        justify-content: center;
+    }
+
+    .media-response img{
+        width: 150px;
+        height: auto;
+    }
+
+    .inicio-container h2{
+        
+    }
+
+    .inicio-container p{
+        
+    }
+
+    .home-socials{
+        
+    }
+
+
+}
