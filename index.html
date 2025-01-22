@@ -12,32 +12,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/responsiveness.css">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/2e789d7b88.js" crossorigin="anonymous"></script>
-    <!-- Animação scroll -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Document</title>
+    <title>Dev João</title>
+    <link rel="icon" href="/assets/img/img-normal/Design_sem_nome-removebg-verde-preview.png" type="image/x-icon">
 </head>
 <body>
     
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
     <!-- Navbar -->
      <header>
 
         <div class="logo">
-            <img src="/assets/img/img-normal/DEV__1_-removebg-preview.png" alt="logo-img" class="logo-img" >
+            <img src="/assets/img/img-normal/DEV-removebg-preview-verde.png" alt="logo-img" class="logo-img" >
         </div>
 
         <ul class="nav-links">
-            <li><a href="#inicio">INÍCIO</a></li>
+            <li><a href="#inicio" class="inicio-a">INÍCIO</a></li>
             <li><a href="#sobre">SOBRE</a></li>
             <li><a href="#projetos">PROJETOS</a></li>
             <li><a href="#contato">CONTATO</a></li>
         </ul>
 
-        <a href="https://github.com/JoaoVictorBES" class="git-icon">
-            <img src="/assets/img/img-normal/Design_sem_nome-removebg-verde-preview.png" alt="" class="nav-img">
+        <a href="https://github.com/JoaoVictorBES" target="_blank" rel="noopener noreferrer" class="nav-img">
+            <img src="/assets/img/img-normal/Design_sem_nome-removebg-verde-preview.png" alt="" class="">
         </a>
 
         <button class="hamburger-menu">☰</button>
@@ -50,13 +59,16 @@
         
             <div class="inicio-container" >
                
-                <div class="inicio-info" data-aos="zoom-in-up">
+                <div class="media-response">
+                    <img src="/assets/img/img-cartoon/cabeça-boneco-cartoon-mediaquery.png" alt="">
+                </div>
+                <div class="inicio-info">
                     <h2 > <span>Back-End Software Developer</span></h2>
                     <p > Solucionador de problemas, transformando lógica em código funcional. <br>Versátil, dinâmico e focado no resultado final. </p>
                     <a href="#sobre" class="chevron" >Sobre mim &#x203A;</a>
                 </div>
     
-                <div class="inicio-img" data-aos="zoom-in-left">
+                <div class="inicio-img" >
                     <img src="/assets/img/img-cartoon/essa-vai-da-bom.png" alt="profile img" class="profile-img" >
                 </div>
     
@@ -65,13 +77,13 @@
             <div class="home-socials">
                 <aside class="left-bar-home">
                     <div class="home-social">
-                        <a href="https://github.com/JoaovictorBES" class="home-social-icon-link">
+                        <a href="https://github.com/JoaovictorBES" target="_blank" rel="noopener noreferrer" class="home-social-icon-link">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </div>
     
                     <div class="home-social">
-                        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-barbosa-791112276/" class="home-social-icon-link">
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-barbosa-791112276/"  target="_blank" rel="noopener noreferrer" class="home-social-icon-link">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div>
@@ -96,22 +108,24 @@
                 <h2>Olá Sou João, Desenvolvedor Web</h2>                                          
                 <p>Back-End Developer | Java Fan | VSCode</p>
             </div>
-            <button type="submit" href="file:///C:/Users/55139/Downloads/PDF%20Pessoal/CV%20-%20Jo%C3%A3o%20%20Victor%20(2).pdf" class="download-link" download>Download CV</button>
-        <div>
+            <button type="submit" href="file:///C:/Users/55139/Downloads/PDF%20Pessoal/CV%20-%20Jo%C3%A3o%20%20Victor%20(2).pdf" target="_blank" rel="noopener noreferrer" class="download-link" download>
+                CURRÍCULO
+            </button>
+        </div>
             
   
         <div class="info-container">
             
-            <div class="card-1" data-aos="flip-left">
+            <div class="card-1" >
                 <h2 class="card-1-title">Sobre mim</h2><br>
                 <p class="card-description">
                     No ano de 2023 decidi mergulhar de cabeça no mundo da programação. Desde então, venho estudando bastante, 
                     inicialmente por conta própria e agora como aluno de Análise e Desenvolvimento de Sistemas. 
                     No dia a dia, trabalho com tecnologias como Java, JavaScript, Angular, HTML, CSS, Postman e MySQL. 
-                    Além de amar resolver problemas com código, também sou apaixonado por futebol, fotografia e atividades ao ar livre.
+                    Além de amar os desafios da programação, também sou apaixonado por futebol, fotografia e atividades ao ar livre.
             </div>        
             
-            <div class="card-2"data-aos="flip-right">
+            <div class="card-2" >
                 <h2 class="card-2-title">Formação</h2><br>
 
                 <div class="icon-txt">
@@ -160,13 +174,13 @@
             
                 <div class="skills-info">
                     <p class="tagline">ONDE HÁ UM OBSTÁCULO, HÁ TAMBÉM UMA OPORTUNIDADE DE CRESCER.</p>
-                    <h1>Skills & Tecnologias</h1>
+                    <h1>Principais Tecnologias</h1>
                     <p class="description">
                         Atuo no desenvolvimento de back-end, criando aplicações web com Java, JavaScript, HTML, CSS e MySQL.<br>
                         Tenho conhecimento em frameworks como Spring Boot, Angular e Node.js, além de utilizar ferramentas como Postman para integração e testes.
                     </p>
             
-                    <p>Visite meu <a href="#">LinkedIn</a> para mais detalhes.</p>
+                    <p>Visite meu <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-barbosa-791112276/" target="_blank" rel="noopener noreferrer">LinkedIn</a> para mais detalhes.</p>
                 </div>
                 
                 <div class="icons-container">
@@ -229,7 +243,7 @@
             
                 <div class="box-cards">
                     
-                    <div class="project-flip-card" data-aos="flip-right">
+                    <div class="project-flip-card" >
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="/assets/img/img-normal/memoteca.png" alt="">
@@ -240,7 +254,7 @@
                         </div>
                     </div>
             
-                    <div class="project-flip-card" data-aos="flip-right">
+                    <div class="project-flip-card" >
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="/assets/img/img-normal/sge.png" alt="">
@@ -251,7 +265,7 @@
                         </div>
                     </div>
             
-                    <div class="project-flip-card" data-aos="flip-right">
+                    <div class="project-flip-card" >
                         <div class="card-inner">
                             <div class="card-front">
                                 <img src="/assets/img/img-normal/picweb.png" alt="">
@@ -270,7 +284,10 @@
 
     <!-- Seção Contato -->
         <section class="contact-section" id="contato" >
-            <h1 class="contact-call">ENTRE EM CONTATO</h1>
+            <div class="contact-info-call">
+                <h1>ENTRE EM CONTATO</h1>
+            </div>
+            
             <div class="contact-form" data-aos="zoom-out">
 
                 <div class="card-form">
@@ -300,18 +317,15 @@
         <div class="footer-container">
             <p>&copy; 2025 João Victor - Todos os direitos reservados.</p>
             <ul class="footer-socials">
-                <li><a href="https://github.com/JoaovictorBES" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-barbosa-791112276/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="mailto:seuemail@exemplo.com"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="https://github.com/JoaovictorBES" target="_blank" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jo%C3%A3o-victor-barbosa-791112276/" target="_blank" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="mailto:seuemail@exemplo.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a></li>
             </ul>
         </div>
         <a href="#inicio" class="back-to-top" ><i class="fa-solid fa-arrow-up"></i></a>
      </footer> 
 
     <script src="/assets/js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    
 </body>
 </html>

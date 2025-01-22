@@ -1,34 +1,43 @@
+/* Global */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+    overflow-x: hidden;
+}
+
 /* HEADER STYLE */
 
 header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
+    padding: 10px 20px;
     background-color: #000;
     color: #fff;
-    position: relative;
+    position: sticky;
     font-family: "Quicksand", serif;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(62, 59, 59, 0.436);
 }
 
 .logo {
     position: absolute;
     left: 50px;
-    bottom: 10px;
-    padding-top: 5rem;
-    
 }
 
 .logo img {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
 }
 
 
 .nav-links {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     list-style: none;
+    margin-right: 50px;
 }
 
 .nav-links a {
@@ -38,43 +47,44 @@ header {
     font-size: 25px;
 }
 
-.git-icon {
+.nav-img {
     position: absolute;
-    right: 50px;
-    margin-top: 10px;
-    transition: transform 0.3s;
+    right: 50px; 
+    bottom: 0.5px; 
 }
 
-.nav-img:hover {
-    animation: wobble 0.5s ease-in-out;
-}
-
-.nav-img{
-    width: 100px;
+.nav-img img {
+    width: 80px;
     height: auto;
+    transition: transform 0.3s ease;
 }
-  
-.git-icon:hover {
-    transform: scale(1.2); 
+
+.nav-img:hover img {
+    animation: wobble 0.5s ease-in-out;
 }
 
 .hamburger-menu {
     display: none;
     font-size: 24px;
     background: none;
-    border: none;
     color: #fff;
-    cursor: pointer;
-    right: 20px;
-    position: absolute;
+    cursor: pointer; 
 }
+
+
 
 /* INÍCIO STYLE */
 
 .inicio-section{
-    font-family: "Quicksand", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: #000;
-    height: 100vh;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .inicio-container{
@@ -92,11 +102,21 @@ header {
     text-align: center;
     width: 60%;
     margin: 0 auto 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .inicio-img{
     text-align: center;
     margin-top: -50px;
+}
+
+.inicio-a{
+    display: none;
+}
+
+.media-response{
+    display: none;
 }
 
 .profile-img{
@@ -138,7 +158,7 @@ header {
     width: 78px;
     border-radius: 20px;
     height: 240px;
-    
+    gap: 10px;
 }
 
 
@@ -160,6 +180,7 @@ header {
 .home-social-icon-link:hover {
     transform: scale(1.2);
 }
+
 
 /* SOBRE STYLE */
 
@@ -218,30 +239,20 @@ header {
     width: 100%;
 }
 
-.card-1{
+.card-1 , .card-2{
     background: #333;
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 20px;
-    min-width: 250px;
-    max-width: 500px;
+    width: 500px; /* Define a mesma largura para ambos os cards */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     overflow: hidden;
 }
 
-.card-2{
-    background: #333;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    max-width: 470px;
-}
 
-.card-1-title{
-    font-size: 1.5rem;
+.card-1-title, .card-2-title{
+    font-size: 3rem;
     font-weight: bold;
     margin-top: -2px;
     justify-content: center;
@@ -252,13 +263,6 @@ header {
     text-overflow: ellipsis;
     text-align: justify;
     line-height: 3;
-}
-
-.card-2-title{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: -2px;
-    justify-content: center;
 }
 
 .icon-txt{
@@ -273,21 +277,26 @@ header {
 }
 
 .download-link{
-    color: rgb(131, 130, 130);
-    list-style: none;
+    color: #838282;
     text-decoration: none;
     font-size: 1rem;
+    font-family: "Quicksand", serif;
     margin-top: 10px;
-    border: 1px solid rgb(12, 5, 5);
+    border: 2px solid #59E889;
+    background: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
 }
 
 .download-link:hover {
     background: #59E889;
-    color: #ccc;
+    color: #000;
 }
+
+
 
 
 /*SKILLS TECHNOLOGIES STYLE*/
@@ -335,7 +344,6 @@ a {
     text-decoration: none;
 }
   
-
 .icons-container{
     display: grid;
     align-items: center;
@@ -351,13 +359,13 @@ a {
 }
 
 .icon i {
-    font-size: 4rem; /* Aumenta o tamanho dos ícones */
+    font-size: 4rem; 
     color: white;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icon i:hover {
-    transform: scale(1.2); /* Efeito de aumento no hover */
+    transform: scale(1.2); 
     color: #fff;
 }
 
@@ -376,6 +384,9 @@ a {
     font-size: 1rem;
     margin-top: 10px;
 }
+
+
+
 
 /* PROJETOS STYLE */
 
@@ -471,10 +482,12 @@ a {
 }
   
 
+
+
 /* CONTACT STYLE */
 
 .contact-section{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -494,18 +507,25 @@ a {
     width: 400px;
     border-radius: 12px; 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
-    border: 2px solid  #59E889; 
+    border: 5px solid  #59E889; 
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-form:hover {
     transform: translateY(-5px); 
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-    
 }
 
-.contact-call{
-    margin-bottom: 50px;
+.contact-info-call{
+  display: flex;
+  align-items: center;
+  margin-bottom: -100px;
+}
+
+.contact-info-call h1{
+    font-size: 3rem;
 }
 
 form {
@@ -625,7 +645,7 @@ footer {
 }
 
 .back-to-top:hover {
-    background-color:#59E889; 
+    background-color: #59E889; 
     transform: scale(1.1); 
 }
 
@@ -651,127 +671,6 @@ footer {
     font-style: normal;
 }
 
-
-
-/* MEDIA QUERIES */
-
-
-@media screen and (max-width: 768px) {
-    
-    html, body{
-        overflow-x: hidden;
-    }
-
-    /* RESPONSIVIDADE HEADER */
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #000;
-        width: 200px;
-        border-radius: 5px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        right: 0;
-        justify-content: center;
-        align-items: center;
-        transition: transform 0.3s ease; 
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .hamburger-menu {
-        display: block;
-        top: 20px;
-        right: 20px;
-        z-index: 1001;
-    }
-
-    .logo-img{
-        width: 80px; 
-        height: auto;
-        position: fixed; 
-        margin-top: -50px;
-        margin-left: -20px;
-        z-index: 1000;
-    }
-
-    .logo img {
-        max-width: 100px;
-    }
-
-    .logo {
-        top: 1px; 
-    }
-
-    .git-icon {
-        display: none;
-    }
-
-    /* RESPONSIVIDADE  INICIO */
-
-    .inicio-section{
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .inicio-container {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .inicio-info {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .inicio-img {
-        width: 100%;
-        align-items: center;
-        display: none;
-    }
-
-    .inicio-container h2{
-        font-size: 40px;
-    }
-
-    .inicio-container p{
-        font-size: 15px;
-    }
-
-    .home-socials{
-        display: none;
-    }
-
-
-    /* RESPONSIVIDADE ABOUT */
-
-    .intro h1 {
-        font-size: 1.5rem;
-    }
-      
-    .intro p {
-        font-size: 0.9rem;
-    }
-      
-    .info-container {
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        align-items: center;
-    }
-      
-    .card {
-        width: 100%;
-    }
-    
-}
 
 /* Keyframes Animations */ 
 @keyframes wobble {
